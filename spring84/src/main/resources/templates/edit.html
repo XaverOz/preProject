@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit user</title>
+</head>
+<body>
+<form method="post" action="./edit">
+    <input type="hidden" name="id" th:value="${user.id}">
+    <div>Name</div>
+    <input type="text" name="name" th:value="${user.name}"><br>
+    <div>Age</div>
+    <input type="number" name="age" th:value="${user.age}" min="10" max="100"><br>
+    <input type="submit" value="Save"><br>
+</form>
+<a href="./logout">Logout</a>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>User info</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>
+            Name
+        </td>
+        <td>
+            Age
+        </td>
+    </tr>
+    <tr>
+        <td th:text="${user.name}" />
+        <td th:text="${user.age}" />
+    </tr>
+</table>
+
+<a href="./logout">Logout</a>
+</body>
+</html>
